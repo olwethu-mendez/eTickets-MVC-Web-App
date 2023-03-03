@@ -2,7 +2,7 @@
 
 namespace eTickets.Models
 {
-    public class Actor
+    public class Producer
     {
         [Key]
         public int Id { get; set; }
@@ -12,6 +12,6 @@ namespace eTickets.Models
         public string Bio { get; set; }
 
         //Relationships
-        public List<Actor_Movie> Actors_Movies { get; set;}
+        public List<Movie> Movie { get; set; }
     }
 }
